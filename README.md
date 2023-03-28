@@ -17,7 +17,7 @@ To get started, make sure you have the following software installed on your syst
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/mopokle/RL_GroupWork.git
+git clone https://github.com/Mopokle/RL_GroupWork.git
 ``` 
 2. Change to the project directory:
 
