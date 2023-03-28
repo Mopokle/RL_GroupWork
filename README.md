@@ -48,6 +48,7 @@ You can customize the script by modifying `main.py` or adding new algorithms and
 ## License 📄
 
 This project is licensed under the MIT License.
+
 ## Acknowledgments 🌟 
 - The [OpenAI Gym](https://github.com/openai/gym) team for providing a fantastic toolkit and reference environments.
 - Our instructors and mentors for their valuable guidance and support.
