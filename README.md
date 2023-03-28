@@ -1,6 +1,6 @@
 # 🤖 RL_GroupWork
 
-This project is focused on using the [OpenAI Gym](https://gym.openai.com/)  (Gymnasium) to develop and experiment with reinforcement learning algorithms in a group setting. We will be working with the standard Gym API and its diverse collection of reference environments, all in Python! 🐍
+This project is focused on using the [OpenAI Gym](https://gymnasium.farama.org/#)  (Gymnasium) to develop and experiment with reinforcement learning algorithms in a group setting. We will be working with the standard Gym API and its diverse collection of reference environments, all in Python! 🐍
 
 ## Introduction 🎉
 
@@ -17,7 +17,7 @@ To get started, make sure you have the following software installed on your syst
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/RL_GroupWork.git
+git clone https://github.com/mopokle/RL_GroupWork.git
 ``` 
 2. Change to the project directory:
 
@@ -44,16 +44,11 @@ To run the project, execute the following command:
 python main.py
 ```
 
-
-
 You can customize the script by modifying `main.py` or adding new algorithms and environments.
-## Contributing 🤝
-
-We welcome contributions from fellow students and researchers! Please read [CONTRIBUTING.md](https://chat.openai.com/chat/CONTRIBUTING.md)  for details on our code of conduct and the process for submitting pull requests.
 ## License 📄
 
 This project is licensed under the MIT License
 ## Acknowledgments 🌟 
-- The [OpenAI Gym](https://gymnasium.farama.org/#)  team for providing a fantastic toolkit and reference environments.
+- The [OpenAI Gym](https://github.com/openai/gym) team for providing a fantastic toolkit and reference environments.
 - Our instructors and mentors for their valuable guidance and support.
 - All the group members for their hard work and collaboration.
