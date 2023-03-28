@@ -32,7 +32,7 @@ source venv/bin/activate
 ``` 
 4. Install the required dependencies:
 
-```
+```bash
 Copy code
 pip install -r requirements.txt
 ```
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 To run the project, execute the following command:
 
-```css
+```bash
 python main.py
 ```
 
