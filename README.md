@@ -44,6 +44,8 @@ python main.py
 ```
 
 You can customize the script by modifying `main.py` or adding new algorithms and environments.
+
+
 ## License 📄
 
 This project is licensed under the MIT License.
@@ -52,3 +54,7 @@ This project is licensed under the MIT License.
 - The [OpenAI Gym](https://github.com/openai/gym) team for providing a fantastic toolkit and reference environments.
 - Our instructors and mentors for their valuable guidance and support.
 - All the group members for their hard work and collaboration.
+
+## Additional Information 📚
+
+For more details about the project, please refer to our [Notion note](https://mopokle.notion.site/RL-Group-Project-9cfb2fcbd34048b582a35bb889f67664).
