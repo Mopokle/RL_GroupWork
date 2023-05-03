@@ -1,70 +1,99 @@
-# Lunar Lander Reinforcement Learning 🚀🌕
+LunarLander RL Group Project 🚀🌕
+=================================
 
-This repository contains a reinforcement learning project for training a lunar lander agent using Deep Q-Network (DQN) and Proximal Policy Optimization (PPO) algorithms. The project is built using PyTorch and the OpenAI Gym's LunarLander-v2 environment.
+This is a group project for learning Reinforcement Learning using OpenAI Gym's LunarLander environment. The objective of the project is to train an agent to land a lunar module safely on the moon. We experiment with two popular RL algorithms, Deep Q-Network (DQN) and Proximal Policy Optimization (PPO), and compare their performance.
 
-## Table of Contents 📚
+Table of Contents 📚
+--------------------
 
-- [Overview](#overview)
-- [Requirements](#requirements)
-- [Getting Started](#getting-started)
-- [Training and Testing](#training-and-testing)
-- [Results](#results)
-- [Contributing](#contributing)
+*   [Getting Started](#getting-started)
+*   [Prerequisites](#prerequisites)
+*   [Installation](#installation)
+*   [Training the Agents](#training-the-agents)
+*   [Testing the Agents](#testing-the-agents)
+*   [Built With](#built-with)
+*   [Contributors](#contributors)
 
-## Overview 🔍
+Getting Started 🌟
+------------------
 
-The goal of this project is to train an agent to successfully land the lunar module on the surface of the moon. The agent is trained using two popular reinforcement learning algorithms:
+These instructions will help you set up the project on your local machine for development and testing purposes.
 
-1. Deep Q-Network (DQN)
-2. Proximal Policy Optimization (PPO)
+### Prerequisites 📝
 
-Both DQN and PPO agents are implemented using PyTorch, and the training is conducted using the OpenAI Gym's LunarLander-v2 environment.
+*   Python 3.7 or higher
+*   PyTorch
+*   OpenAI Gym
 
-## Requirements 🛠️
+### Installation 🛠️
 
-- Python 3.6 or later
-- [PyTorch](https://pytorch.org/get-started/locally/)
-- [OpenAI Gym](https://gym.openai.com/docs/#installation)
-- [NumPy](https://numpy.org/install/)
+1.  Clone the repository:
 
-## Getting Started 🏁
-
-1. Clone the repository:
+```bash
+git clone https://github.com/Mopokle/RL_GroupWork.git
 ```
-git clone [https://github.com/Mopokle/RL_GroupWork 
+
+2.  Create a virtual environment and activate it:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux or macOS
+venv\Scripts\activate     # Windows
 ```
-2. Install the required packages:
 
+3.  Install the required packages:
 
-
-```shell
+```bash
 pip install -r requirements.txt
 ```
 
-## Training and Testing 🏋️‍♂️🔍
+Training the Agents 🎓
+----------------------
 
-### DQN
+You can train the agents using DQN and PPO algorithms. To train the DQN agent, navigate to the `dqn` folder and run:
 
-To train the DQN agent:
-```
+```bash
 python dqn_train.py
 ```
-To test the DQN agent:
-```
-python dqn_test.py
-```
 
-### PPO
-To train the PPO agent:
-```shell
+To train the PPO agent, navigate to the `ppo` folder and run:
+
+```bash
 python ppo_train.py
 ```
 
-To test the PPO agent:
+The training scripts will display the rewards and save the trained models to the respective folders.
+
+Testing the Agents 🕹️
+----------------------
+
+To test the trained agents, you can run the following commands:
+
+For the DQN agent:
+
+```bash
+python dqn_test.py
 ```
+
+For the PPO agent:
+
+```bash
 python ppo_test.py
 ```
 
-## Results 📊
+These scripts will load the trained models and visualize the agents' performance in the LunarLander environment.
 
-The training progress and results are saved in the corresponding directories for each algorithm (DQN and PPO). Plots and trained models can be found in these directories.
+Built With 🛠️
+--------------
+
+*   [Python](https://www.python.org/) - The programming language used
+*   [PyTorch](https://pytorch.org/) - The deep learning framework used
+*   [OpenAI Gym](https://gym.openai.com/) - Toolkit for developing and comparing reinforcement learning algorithms
+
+Contributors 👥
+---------------
+
+*   [Lingfeng Wang](https://github.com/Mopokle)
+*   [Group Member 1](https://github.com/group_member_1)
+*   [Group Member 2](https://github.com/group_member_2)
+*   [Group Member 3](https://github.com/group_member_3)
