@@ -1,5 +1,6 @@
 import gym
 import time
+import os
 from ppo_agent import PPOAgent
 
 def test(agent, env, episodes=10, max_steps=1000, render=True):
@@ -28,7 +29,11 @@ if __name__ == "__main__":
     action_size = env.action_space.n
 
     agent = PPOAgent(state_size, action_size)
-    agent.load_model("ppo_lunar_lander.pth")
+
+    model_dir = "model"
+    model_file = "ppo_lunar_lander.pth"
+    model_path = os.path.join(model_dir, model_file)
+    agent.load_model(model_path)
 
     test(agent, env)
     env.close()

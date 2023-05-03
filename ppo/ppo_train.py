@@ -1,5 +1,7 @@
 import gym
 import torch
+import os
+from datetime import datetime
 import numpy as np
 from ppo_agent import PPOAgent
 
@@ -55,7 +57,11 @@ if __name__ == "__main__":
     episode_rewards = train(agent, env)
 
     # Save the trained model
-    agent.save_model("ppo_lunar_lander.pth")
+    now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    model_dir = "model"
+    os.makedirs(model_dir, exist_ok=True)
+    model_path = os.path.join(model_dir, f"ppo_lunar_lander_{now}.pth")
+    agent.save_model(model_path)
 
     # Plot the rewards
     import matplotlib.pyplot as plt
