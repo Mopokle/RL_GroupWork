@@ -51,7 +51,6 @@ if __name__ == "__main__":
     env = gym.make("LunarLander-v2")
     state_size = env.observation_space.shape[0]
     action_size = env.action_space.n
-
     agent = PPOAgent(state_size, action_size)
 
     episode_rewards = train(agent, env)

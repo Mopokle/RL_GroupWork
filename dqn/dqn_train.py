@@ -58,4 +58,5 @@ if __name__ == "__main__":
     # Save the figure to a file
     plt.savefig("training_rewards.png", dpi=300)
 
+    # Show the plot
     plt.show()
