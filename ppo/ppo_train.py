@@ -5,7 +5,7 @@ from datetime import datetime
 import numpy as np
 from ppo_agent import PPOAgent
 
-def train(agent, env, episodes=1000, max_steps=800, update_interval=2000):
+def train(agent, env, episodes=2000, max_steps=800, update_interval=2000):
     episode_rewards = []
 
     states = []
