@@ -50,7 +50,9 @@ pip install -r requirements.txt
 Training the Agents 🎓
 ----------------------
 
-You can train the agents using DQN and PPO algorithms. To train the DQN agent, navigate to the `dqn` folder and run:
+You can train the agents using DQN and PPO algorithms. 
+
+To train the DQN agent, navigate to the `dqn` folder and run:
 
 ```bash
 python dqn_train.py
