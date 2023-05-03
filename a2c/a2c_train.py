@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from torch.distributions import Categorical
 from a2c_agent import A2CAgent
 
-def train(agent, env, episodes=1000, max_steps=800):
+def train(agent, env, episodes=2000, max_steps=800):
     episode_rewards = []
 
     for episode in range(episodes):
