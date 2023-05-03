@@ -4,7 +4,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 from torch.distributions import Categorical
 from sac_agent import SACAgent
-def train(agent, env, episodes=1000, max_steps=800):
+def train(agent, env, episodes=2000):
     episode_rewards = []
 
     for episode in range(episodes):
@@ -50,6 +50,6 @@ if __name__ == "__main__":
     plt.ylabel("Reward")
 
     # Save the figure to a file
-    plt.savefig("training_rewards.png", dpi=300)
+    plt.savefig("training_rewards_ep2000.png", dpi=300)
 
     plt.show()

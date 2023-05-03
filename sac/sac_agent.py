@@ -16,11 +16,6 @@ LEARNING_RATE = 0.0003
 REPLAY_BUFFER_SIZE = 1000000
 
 
-
-# Save and load paths
-MODEL_SAVE_PATH = "sac_lunar_lander_model.pth"
-VIDEO_SAVE_PATH = "video"
-
 class ReplayBuffer:
     def __init__(self, capacity):
         self.buffer = deque(maxlen=capacity)
@@ -71,15 +66,20 @@ class PolicyNetwork(nn.Module):
 
 
 class SACAgent:
-    def __init__(self, state_dim, action_dim, action_bound):
-        self.value_net = ValueNetwork(state_dim).cuda()
-        self.target_value_net = ValueNetwork(state_dim).cuda()
-        self.policy_net = PolicyNetwork(state_dim, action_dim, action_bound).cuda()
+    def __init__(self, state_dim, action_dim):
+        self.state_dim = state_dim
+        self.action_dim = action_dim
+
         self.replay_buffer = ReplayBuffer(REPLAY_BUFFER_SIZE)
+        self.value_net = ValueNetwork(state_dim)  # Remove .cuda()
+        self.target_value_net = ValueNetwork(state_dim)  # Remove .cuda()
+        self.policy_net = PolicyNetwork(state_dim, action_dim)  # Remove .cuda()
 
         self.value_optimizer = optim.Adam(self.value_net.parameters(), lr=LEARNING_RATE)
         self.policy_optimizer = optim.Adam(self.policy_net.parameters(), lr=LEARNING_RATE)
-        self.update_target_network()
+
+        for target_param, param in zip(self.target_value_net.parameters(), self.value_net.parameters()):
+            target_param.data.copy_(param.data)
 
     def update_target_network(self):
         for target_param, param in zip(self.target_value_net.parameters(), self.value_net.parameters()):
@@ -91,11 +91,11 @@ class SACAgent:
 
         state, action, reward, next_state, done = self.replay_buffer.sample(BATCH_SIZE)
 
-        state = torch.FloatTensor(state).cuda()
-        action = torch.FloatTensor(action).cuda()
-        reward = torch.FloatTensor(reward).unsqueeze(1).cuda()
-        next_state = torch.FloatTensor(next_state).cuda()
-        done = torch.FloatTensor(done).unsqueeze(1).cuda()
+        state = torch.FloatTensor(state)
+        action = torch.FloatTensor(action)
+        reward = torch.FloatTensor(reward).unsqueeze(1)
+        next_state = torch.FloatTensor(next_state)
+        done = torch.FloatTensor(done).unsqueeze(1)
 
         with torch.no_grad():
             next_action, next_log_prob = self.policy_net.sample(next_state)
@@ -120,7 +120,7 @@ class SACAgent:
         self.update_target_network()
 
     def act(self, state):
-        state = torch.FloatTensor(state).unsqueeze(0).cuda()
+        state = torch.FloatTensor(state).unsqueeze(0)
         action, _ = self.policy_net.sample(state)
         return action.item()
 
