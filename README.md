@@ -4,7 +4,9 @@ LunarLander RL Group Project 🚀🌕
 This is a group project for learning Reinforcement Learning using OpenAI Gym's LunarLander environment. The objective of the project is to train an agent to land a lunar module safely on the moon. We experiment with two popular RL algorithms, Deep Q-Network (DQN) and Proximal Policy Optimization (PPO), and compare their performance.
 
 --------
-<img src="https://github.com/Mopokle/RL_GroupWork/raw/main/lunargif.gif" width="500"/>
+<p align="center">
+  <img src="https://github.com/Mopokle/RL_GroupWork/raw/main/lunargif.gif" width="500"/>
+</p>
 
 --------
 Table of Contents 📚
