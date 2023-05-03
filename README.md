@@ -90,10 +90,12 @@ Built With 🛠️
 *   [PyTorch](https://pytorch.org/) - The deep learning framework used
 *   [OpenAI Gym](https://gym.openai.com/) - Toolkit for developing and comparing reinforcement learning algorithms
 
-Contributors 👥
+Group Members 👥
 ---------------
 
 *   [Lingfeng Wang](https://github.com/Mopokle)
-*   [Group Member 1](https://github.com/group_member_1)
-*   [Group Member 2](https://github.com/group_member_2)
-*   [Group Member 3](https://github.com/group_member_3)
+*   [Jiacheng Xu](https://github.com/unfaa3)
+*   [Yi-Lun Chu](https://github.com/chuyilun)
+*   [Junjie Liu](https://github.com/wodigexiaodonggua)
+*   [Chun Hung Lin](https://github.com/efpm168806)
+*   [Zhechen Huang](https://github.com/JasonHuang0028)
