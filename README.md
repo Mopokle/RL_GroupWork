@@ -1,7 +1,7 @@
 LunarLander RL Group Project 🚀🌕
 =================================
 
-This is a group project for learning Reinforcement Learning using OpenAI Gym's LunarLander environment. The objective of the project is to train an agent to land a lunar module safely on the moon. We experiment with two popular RL algorithms, Deep Q-Network (DQN) and Proximal Policy Optimization (PPO), and compare their performance.
+This is a group project for learning Reinforcement Learning using OpenAI Gym's LunarLander environment. The objective of the project is to train an agent to land a lunar module safely on the moon. We experiment with four popular RL algorithms, Deep Q-Network (DQN), Proximal Policy Optimization (PPO), Soft Actor-Critic (SAC), and Advantage Actor-Critic (A2C), and compare their performance.
 
 
 <p align="center">
@@ -45,18 +45,12 @@ pip install -r requirements.txt
 Training the Agents 🎓
 ----------------------
 
-You can train the agents using DQN and PPO algorithms. 
+You can train the agents using DQN, PPO, SAC, and A2C algorithms. To train the agents, navigate to the respective folders and run the corresponding training script:
 
-To train the DQN agent, navigate to the `dqn` folder and run:
-
-```bash
-python dqn_train.py
-```
-
-To train the PPO agent, navigate to the `ppo` folder and run:
 
 ```bash
-python ppo_train.py
+cd "replace with foldername"
+python "replace with algorithms"_train.py
 ```
 
 The training scripts will display the rewards and save the trained models to the respective folders.
@@ -64,21 +58,14 @@ The training scripts will display the rewards and save the trained models to the
 Testing the Agents 🕹️
 ----------------------
 
-To test the trained agents, you can run the following commands:
-
-For the DQN agent:
+To test the trained agents, navigate to the respective folders and run the corresponding test script:
 
 ```bash
-python dqn_test.py
+python "replace with algorithms"_test.py
 ```
 
-For the PPO agent:
 
-```bash
-python ppo_test.py
-```
-
-These scripts will load the trained models and visualize the agents' performance in the LunarLander environment.
+The training scripts will display the rewards and save the trained models to the respective folders.
 
 Built With 🛠️
 --------------
@@ -96,3 +83,9 @@ Group Members 👥
 *   [Junjie Liu](https://github.com/wodigexiaodonggua)
 *   [Chun Hung Lin](https://github.com/efpm168806)
 *   [Zhechen Huang](https://github.com/JasonHuang0028)
+
+
+Project Documentation 📄
+------------------------
+
+For more details on the project, including discussions, meeting notes, and other resources, please visit our [Notion page](https://www.notion.so/mopokle/RL-Group-Project-9cfb2fcbd34048b582a35bb889f67664).
