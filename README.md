@@ -8,7 +8,7 @@ This is a group project for learning Reinforcement Learning using OpenAI Gym's L
   <p align="center">
     <img src="https://github.com/Mopokle/RL_GroupWork/raw/main/lunargif.gif" width="500"/>
   </p>
-  <figcaption>Result</figcaption>
+  <figcaption style="text-align: center;"> Result Comparison</figcaption>
 </figure>
 
 
