@@ -8,17 +8,6 @@ This is a group project for learning Reinforcement Learning using OpenAI Gym's L
   <img src="https://github.com/Mopokle/RL_GroupWork/raw/main/lunargif.gif" width="500"/>
 </p>
 
---------
-Table of Contents 📚
---------------------
-
-*   [Getting Started](#getting-started)
-*   [Prerequisites](#prerequisites)
-*   [Installation](#installation)
-*   [Training the Agents](#training-the-agents)
-*   [Testing the Agents](#testing-the-agents)
-*   [Built With](#built-with)
-*   [Contributors](#contributors)
 
 Getting Started 🌟
 ------------------
