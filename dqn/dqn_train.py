@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 from dqn_agent import DQNAgent
 
-def train(agent, env, episodes=1000, max_steps=800, update_frequency=10, epsilon_start=1.0, epsilon_decay=0.998, epsilon_min=0.01):
+def train(agent, env, episodes=2000, max_steps=800, update_frequency=10, epsilon_start=1.0, epsilon_decay=0.998, epsilon_min=0.01):
     episode_rewards = []
     epsilon = epsilon_start
 
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     plt.ylabel("Reward")
 
     # Save the figure to a file
-    plt.savefig("training_rewards.png", dpi=300)
+    plt.savefig("training_rewards_ep1000.png", dpi=300)
 
     # Show the plot
     plt.show()
