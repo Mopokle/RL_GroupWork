@@ -4,13 +4,10 @@ LunarLander RL Group Project 🚀🌕
 This is a group project for learning Reinforcement Learning using OpenAI Gym's LunarLander environment. The objective of the project is to train an agent to land a lunar module safely on the moon. We experiment with four popular RL algorithms, Deep Q-Network (DQN), Proximal Policy Optimization (PPO), Soft Actor-Critic (SAC), and Advantage Actor-Critic (A2C), and compare their performance.
 
 
-<figure>
-  <p align="center">
-    <img src="https://github.com/Mopokle/RL_GroupWork/raw/main/lunargif.gif" width="500"/>
-  </p>
-  <figcaption style="text-align: center;"> Result Comparison</figcaption>
-</figure>
-
+<p align="center">
+  <img src="https://github.com/Mopokle/RL_GroupWork/raw/main/lunargif.gif" width="500"/>
+</p>
+<p align="center">Result Comparison</p>
 
 Getting Started 🌟
 ------------------
